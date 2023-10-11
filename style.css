@@ -53,15 +53,28 @@ nav.row {
     overflow-y: hidden;
     background-color: grey;
   }
+
+  .anime-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10;
+    grid-gap: 20px;
+  }
+
+
+
   .anime-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 100%; 
+    /**grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));*/
     grid-gap: 20px;
     list-style: none;
     padding: 0;
 }
 
+
 .anime-list-item {
+    display: grid;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
