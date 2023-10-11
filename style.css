@@ -3,13 +3,20 @@ nav.row {
     color: #fff;
   }
   
-  .brand-logo {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
+
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  text-align: center; 
+}
+
+  .paiva{
+    display: flex;
+    justify-content: center;
   }
+
   
-  /* Estilos para o formulário de pesquisa */
   form#search_form {
     margin-top: 2rem;
   }
@@ -18,7 +25,6 @@ nav.row {
     width: 100%;
   }
   
-  /* Estilos para os resultados da pesquisa */
   .kemicofa-row {
     display: flex;
     flex-direction: row;
@@ -47,36 +53,51 @@ nav.row {
     overflow-y: hidden;
     background-color: grey;
   }
-  /* Classe para estilizar a lista de animes */
-  .anime-list {
+  .anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
     list-style: none;
     padding: 0;
-  }
-  
-  .anime-list-item {
-    margin-bottom: 1rem;
+}
+
+.anime-list-item {
+    background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 1rem;
-    background-color: #f9f9f9;
-  }
-  
-  .anime-title {
+    text-align: center;
+}
+
+.anime-title {
     font-size: 1.2rem;
     font-weight: bold;
-  }
-  
-  .anime-description {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  /* Estilos adicionais a gosto */
-  
-  
-  /* Estilos para o corpo da página */
-  body {
-    margin: 0;
-    overflow-x: hidden;
-  }
-  
+    margin-bottom: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url('/img/wp1944208-all-in-one-anime-wallpapers\ 1.png');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
+body::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+input{
+  color: white;
+}
