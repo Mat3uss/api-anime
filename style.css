@@ -82,7 +82,7 @@ img {
 body {
   margin: 0;
   overflow-x: hidden;
-  background-image: url('/img/wp1944208-all-in-one-anime-wallpapers\ 1.png');
+  background-image: url('./img/wp1944208-all-in-one-anime-wallpapers\ 1.png');
   background-size: cover; 
   background-repeat: no-repeat; 
   background-attachment: fixed; 
