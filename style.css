@@ -15,7 +15,6 @@ nav.row {
     display: flex;
     justify-content: center;
   }
-
   
   form#search_form {
     margin-top: 2rem;
@@ -25,35 +24,6 @@ nav.row {
     width: 100%;
   }
   
-  .kemicofa-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    justify-content: stretch;
-  }
-  
-  .kemicofa-row > * {
-    flex-basis: 20rem;
-    flex-shrink: 0;
-  }
-  
-  .kemicofa-row .card {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .kemicofa-row .card > .card-content {
-    flex-grow: 1;
-  }
-  
-  .kemicofa-row .card > .card-image {
-    flex-basis: 25rem;
-    flex-shrink: 0;
-    overflow-y: hidden;
-    background-color: grey;
-  }
-
   .anime-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
